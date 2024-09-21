@@ -1,19 +1,21 @@
+---
+layout: default
+title: Nihar Ranjan - Curriculum Vitae
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nihar Ranjan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
         }
-        .name {
+        h1, h2 {
             text-align: center;
-            font-size: 48px; /* Larger size */
-            font-weight: bold;
-            margin: 20px 0; /* Add some space around */
         }
         .section {
             margin-top: 20px;
@@ -24,25 +26,19 @@
         .section p {
             margin: 5px 0;
         }
-        .contact-info {
-            list-style-type: none;
-            padding: 0;
-        }
-        @media (max-width: 600px) {
-            body {
-                margin: 10px;
-            }
-        }
     </style>
+    <title>Nihar Ranjan - Curriculum Vitae</title>
 </head>
 <body>
     <header>
-        <h1 class="name">Nihar Ranjan</h1>
-        
+        <h1>{{ page.title }}</h1>
     </header>
 
     <main>
-        
+        <div class="section">
+            <h2>Date of Birth</h2>
+            <p>15.07.1991</p>
+        </div>
 
         <div class="section">
             <h2>Address</h2>
@@ -51,18 +47,21 @@
 
         <div class="section">
             <h2>Contact Information</h2>
-            <ul class="contact-info">
-                <li>Telephone: <a href="tel:+4915217566352">+4915217566352</a></li>
+            <ul>
+                <li>Telephone: <a href="tel:+4915217566352">Click to call</a></li>
                 <li>Email: <a href="mailto:niharranjan91@gmail.com">niharranjan91@gmail.com</a></li>
             </ul>
         </div>
 
         <div class="section">
             <h2>Professional Experience</h2>
-            <p>03/2020 - present</p>
+            <p>03/2020 - Present</p>
             <p>Infosys, Dusseldorf</p>
             <p>Associate</p>
-            
+            <ul>
+                <li>Project 3: Programming in Python and Java...</li>
+                <!-- Add details for other projects -->
+            </ul>
         </div>
 
         <div class="section">
@@ -70,7 +69,7 @@
             <p>10/2013 - 09/2019</p>
             <p>University of Duisburg-Essen</p>
             <p>B.Sc., Computer Engineering</p>
-            <p>Project: Comparison of performance in KNIME and Eidominer using neural networks (March-May'18)</p>
+            <p>Project: Comparison of performance in KNIME and Eidominer using neural networks (March-May '18)</p>
             <p>Thesis: Self Organising Maps (SOM) with Python (June '19-Sep '19)</p>
         </div>
 
@@ -92,7 +91,11 @@
                 <li>Data Science</li>
                 <li>Machine Learning</li>
             </ul>
+            <p>Hobbies: Reading and Travelling</p>
         </div>
+    </main>
+</body>
+</html>
     </main>
 </body>
 </html>
