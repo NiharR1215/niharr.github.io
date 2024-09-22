@@ -1,5 +1,7 @@
 ---
 layout: default
+title: "Nihar Ranjan"
+author: "Nihar Ranjan"
 ---
 
 <!DOCTYPE html>
@@ -7,14 +9,15 @@ layout: default
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>{{ page.title }}</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
         }
-        h1, h2 {
+        h1 {
             text-align: center;
+            font-size: 2.5em;
         }
         .section {
             margin-top: 20px;
@@ -25,16 +28,33 @@ layout: default
         .section p {
             margin: 5px 0;
         }
+        .contact-info {
+            list-style-type: none;
+            padding: 0;
+        }
+        @media (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
     </style>
-    
 </head>
 <body>
+
     <header>
-        <h1>{{ page.title }}</h1>
+        <h1>Nihar Ranjan</h1>
+        <h2>Curriculum Vitae</h2>
     </header>
 
     <main>
-        
+        <div class="section">
+            <h2>Date of Birth</h2>
+            <p>15.07.1991</p>
+        </div>
 
         <div class="section">
             <h2>Address</h2>
@@ -43,7 +63,7 @@ layout: default
 
         <div class="section">
             <h2>Contact Information</h2>
-            <ul>
+            <ul class="contact-info">
                 <li>Telephone: <a href="tel:+4915217566352">+4915217566352</a></li>
                 <li>Email: <a href="mailto:niharranjan91@gmail.com">niharranjan91@gmail.com</a></li>
             </ul>
@@ -54,8 +74,12 @@ layout: default
             <p>03/2020 - Present</p>
             <p>Infosys, Dusseldorf</p>
             <p>Associate</p>
-            
+            <ul>
+                <li>Project 3: Programming in Python and Java...</li>
+                <!-- Add details for other projects -->
+            </ul>
         </div>
+
         <div class="section">
             <h2>Education</h2>
             <p>10/2013 - 09/2019</p>
@@ -86,8 +110,11 @@ layout: default
             <p>Hobbies: Reading and Travelling</p>
         </div>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Nihar Ranjan</p>
+    </footer>
+    
 </body>
 </html>
-    </main>
-</body>
-</html>
+
